@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Hero() {
 	return (
@@ -16,21 +19,30 @@ export default function Hero() {
 
 				{/* Overlay content */}
 				<div className="absolute inset-0 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 px-4">
-					<div className="bg-white/65 backdrop-blur-sm shadow-md rounded-md px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-7xl w-full">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+						className="bg-white/65 backdrop-blur-sm shadow-md rounded-md px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-7xl w-full"
+					>
 						<h1 className="text-center text-neutral-900 text-lg leading-relaxed sm:text-2xl md:text-4xl lg:text-5xl">
 							<span className="font-semibold">Pierre-Yves CHICOT</span>
 							<span className="font-normal"> : Expertise en Droit et Excellence au service de vos besoins</span>
 						</h1>
-					</div>
+					</motion.div>
 
-					<div>
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+					>
 						<Link
 							href="#contact"
 							className="inline-block rounded-md bg-[#EEC96D] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
 						>
 							Demander un devis gratuit
 						</Link>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

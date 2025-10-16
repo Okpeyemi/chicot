@@ -12,8 +12,8 @@ export default function ConsultationNotice() {
             </div>
             <p className="mt-3 sm:mt-4 mx-auto max-w-6xl text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl leading-relaxed sm:leading-relaxed md:leading-loose text-red-600 px-2">
               Nous proposons une première consultation à 200 euros, montant intégralement déduit des honoraires si
-              vous nous confiez votre dossier. Cette formule vous permet de bénéficier d'une évaluation approfondie sans
-              engagement, tout en profitant d'une tarification avantageuse si vous poursuivez avec nous.
+              vous nous confiez votre dossier. Cette formule vous permet de bénéficier d&apos;une évaluation approfondie sans
+              engagement, tout en profitant d&apos;une tarification avantageuse si vous poursuivez avec nous.
             </p>
           </div>
         </div>

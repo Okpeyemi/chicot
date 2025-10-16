@@ -1,5 +1,22 @@
+import { Metadata } from "next";
 import ContactsHero from "@/components/contacts/Hero";
 import ContactSection from "@/components/contacts/ContactSection";
+import { generatePageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = generatePageMetadata(
+  "Contact - Prendre Rendez-vous",
+  "Contactez le Cabinet Pierre-Yves CHICOT à Pointe-à-Pitre. Consultation juridique, prise de rendez-vous et demande de devis gratuit. Réponse sous 24h.",
+  "/contacts",
+  [
+    "contact avocat Guadeloupe",
+    "rendez-vous avocat",
+    "consultation juridique",
+    "devis gratuit avocat",
+    "cabinet Pointe-à-Pitre",
+    "coordonnées avocat",
+    "prendre rendez-vous"
+  ]
+);
 
 export default function Contacts() {
   return (

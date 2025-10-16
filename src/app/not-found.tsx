@@ -28,8 +28,8 @@ export default function NotFound() {
           Page introuvable
         </h2>
         <p className="text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed mb-8 px-4">
-          Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
-          Veuillez vérifier l'URL ou retourner à la page d'accueil.
+          Désolé, la page que vous recherchez n&apos;existe pas ou a été déplacée.
+          Veuillez vérifier l&apos;URL ou retourner à la page d&apos;accueil.
         </p>
 
         {/* Boutons d'action */}
@@ -52,7 +52,7 @@ export default function NotFound() {
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
 
           <Link
@@ -66,7 +66,7 @@ export default function NotFound() {
         {/* Liens utiles */}
         <div className="mt-12 pt-8 border-t border-neutral-200">
           <p className="text-sm sm:text-base text-neutral-600 mb-4">
-            Pages populaires :
+            Pages populaires&nbsp;:
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
             <Link

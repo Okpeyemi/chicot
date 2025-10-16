@@ -13,7 +13,7 @@ export default function ConsultantSection() {
               <li>Élaboration, mise en œuvre et évaluation de politiques publiques</li>
               <li>Analyse des problématiques publiques et des impacts des décisions politiques</li>
               <li>Communication avec les parties prenantes, les médias et le public</li>
-              <li>Promotion de l'éthique et de la gouvernance dans les institutions</li>
+              <li>Promotion de l&apos;éthique et de la gouvernance dans les institutions</li>
             </ul>
           </div>
         </div>

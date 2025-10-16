@@ -4,18 +4,17 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageLoader from "@/components/PageLoader";
+import StructuredData from "@/components/StructuredData";
+import { defaultMetadata } from "@/lib/metadata";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Pierre-Yves CHICOT - Avocat et Consultant en Guadeloupe",
-  description: "Cabinet d'avocat et de conseil juridique en Guadeloupe. Expertise en droit public, droit privé, droit pénal et politiques publiques. 25 ans d'expérience.",
-  keywords: ["avocat", "Guadeloupe", "droit", "conseil juridique", "Pierre-Yves CHICOT", "consultant", "politiques publiques"],
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,
@@ -24,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <StructuredData />
+      </head>
       <body className={`${playfair.variable} antialiased`}>
         <PageLoader />
         <Header />

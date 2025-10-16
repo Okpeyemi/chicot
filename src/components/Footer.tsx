@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import FadeIn from "./animations/FadeIn";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -42,7 +45,8 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-8 sm:py-12 md:py-16">
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start justify-between">
           {/* Left card */}
-          <div className="w-full md:flex-1 rounded-md bg-[#EEC96D] p-6 sm:p-8 md:p-10 shadow-sm">
+          <FadeIn direction="left" delay={0.1}>
+            <div className="w-full md:flex-1 rounded-md bg-[#EEC96D] p-6 sm:p-8 md:p-10 shadow-sm">
             <div className="flex items-center justify-center md:justify-start">
               <div className="relative h-[120px] w-[86px] sm:h-[140px] sm:w-[100px] md:h-[162px] md:w-[116px]">
                 <Image src="/logo-dark.png" alt="Logo Pierre-Yves CHICOT" fill className="object-contain" />
@@ -54,7 +58,7 @@ export default function Footer() {
               <dl className="mt-3 sm:mt-4 space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg">
                 <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                   <dt className="font-medium">Email :</dt>
-                  <dd className="font-semibold break-words">pyc971@yahoo.fr (pour les services d'avocat)</dd>
+                  <dd className="font-semibold break-words">pyc971@yahoo.fr (pour les services d&apos;avocat)</dd>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                   <dt className="font-medium">Téléphone :</dt>
@@ -67,9 +71,11 @@ export default function Footer() {
               </dl>
             </div>
           </div>
+          </FadeIn>
 
           {/* Right social + heading */}
-          <div className="w-full md:w-auto relative flex flex-col">
+          <FadeIn direction="right" delay={0.2}>
+            <div className="w-full md:w-auto relative flex flex-col">
             <div className="absolute top-0 left-0 right-0 h-1 w-full bg-[#EEC96D]" />
             <div className="mt-8 sm:mt-12 md:mt-20">
               <p className="text-lg sm:text-xl text-center md:text-left">Réseaux Sociaux :</p>
@@ -88,6 +94,7 @@ export default function Footer() {
               <h2 className="mt-8 sm:mt-10 text-2xl sm:text-3xl font-semibold text-center md:text-left">Contactez-nous !</h2>
             </div>
           </div>
+          </FadeIn>
         </div>
       </div>
 

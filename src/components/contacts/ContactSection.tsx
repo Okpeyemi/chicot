@@ -27,7 +27,6 @@ export default function ContactSection() {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: brancher à une action/serverless route. Pour l'instant on log.
-    // eslint-disable-next-line no-console
     console.log("contact form:", data);
     alert("Votre message a bien été pris en compte. Merci !");
     setData({ email: "", phone: "", name: "", subject: "", message: "" });

@@ -1,9 +1,14 @@
+"use client";
+
+import ScaleIn from "../animations/ScaleIn";
+
 export default function ServicesSection() {
   return (
     <section id="services" className="relative z-10 -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-40 px-4 py-8 sm:py-12 md:py-16 lg:py-20">
       <div className="mx-auto max-w-6xl grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
         {/* Avocat card */}
-        <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] ring-neutral-200 p-2 sm:p-3 md:p-4">
+        <ScaleIn delay={0.1}>
+          <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] ring-neutral-200 p-2 sm:p-3 md:p-4">
           <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900">
             Avocat
           </div>
@@ -13,17 +18,19 @@ export default function ServicesSection() {
             <li>
               Représentation en justice (droit pénal, civil, public, droit des étrangers)
             </li>
-            <li>Rédaction de contrats et d'actes juridiques</li>
+            <li>Rédaction de contrats et d&apos;actes juridiques</li>
             <li>Négociation et médiation pour des résolutions amiables</li>
             <li>Recherches juridiques et consultations écrites</li>
             <li>Analyse de dossiers et préparation de procédures</li>
             <li>Plaidoyerie devant les tribunaux</li>
-            <li>Assistance en garde à vue et visites en maison d'arrêt</li>
+            <li>Assistance en garde à vue et visites en maison d&apos;arrêt</li>
           </ul>
         </div>
+        </ScaleIn>
 
         {/* Formateur card */}
-        <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] shadow-sm ring-1 ring-neutral-200 p-2 sm:p-3 md:p-4">
+        <ScaleIn delay={0.2}>
+          <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] shadow-sm ring-1 ring-neutral-200 p-2 sm:p-3 md:p-4">
           <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 text-center">
             Formateur et Séminariste
           </div>
@@ -44,6 +51,7 @@ export default function ServicesSection() {
             </p>
           </div>
         </div>
+        </ScaleIn>
       </div>
     </section>
   );
