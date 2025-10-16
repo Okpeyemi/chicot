@@ -6,7 +6,7 @@ import ConsultationNotice from "@/components/apropos/ConsultationNotice";
 export default function AProposPage() {
   return (
     <main>
-      <AproposHero title={"À Propos de Maître\nPierre-Yves CHICOT"} imageSrc="/a-propos-hero.png" height="md" />
+      <AproposHero title={"À Propos de Maître\nPierre-Yves CHICOT"} imageSrc="/a-propos-hero.png" height="lg" />
       <AboutSection />
       <EngagementSection />
       <ConsultationNotice />

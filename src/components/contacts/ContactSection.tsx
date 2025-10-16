@@ -37,15 +37,15 @@ export default function ContactSection() {
     "w-full rounded-xl bg-neutral-100 px-4 py-3 text-neutral-900 placeholder-neutral-500 outline-none ring-1 ring-neutral-200 focus:ring-2 focus:ring-neutral-400";
 
   return (
-    <section className="px-4 py-12 sm:py-16 md:py-20">
-      <div className="mx-auto max-w-6xl grid grid-cols-1 gap-10 md:grid-cols-[minmax(0,1fr)_1px_minmax(0,0.9fr)]">
+    <section className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="mx-auto max-w-6xl grid grid-cols-1 gap-8 sm:gap-10 md:grid-cols-[minmax(0,1fr)_1px_minmax(0,0.9fr)]">
         {/* Form */}
         <div>
           <h2 className="sr-only">Formulaire de contact</h2>
-          <p className="mb-4 text-center text-2xl">Formulaire :</p>
+          <p className="mb-3 sm:mb-4 text-center text-lg sm:text-xl md:text-2xl font-semibold">Formulaire :</p>
 
-          <form onSubmit={onSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <form onSubmit={onSubmit} className="space-y-3 sm:space-y-4">
+            <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2">
               <input
                 type="email"
                 name="email"
@@ -95,14 +95,14 @@ export default function ContactSection() {
               className={inputCls}
             />
 
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
               <button
                 type="submit"
-                className="rounded-2xl bg-[#EEC96D] px-6 py-3 text-3xl font-semibold text-neutral-900 shadow hover:bg-[#e1bb57] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+                className="w-full sm:w-auto rounded-xl sm:rounded-2xl bg-[#EEC96D] px-5 py-2.5 sm:px-6 sm:py-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
               >
                 Envoyer
               </button>
-              <p className="text-sm text-neutral-600">Nous vous répondrons sous 24h !</p>
+              <p className="text-xs sm:text-sm text-neutral-600 text-center sm:text-left">Nous vous répondrons sous 24h !</p>
             </div>
           </form>
         </div>
@@ -112,8 +112,8 @@ export default function ContactSection() {
 
         {/* Details */}
         <div>
-          <h2 className="text-4xl font-semibold text-neutral-900">Coordonnées</h2>
-          <dl className="mt-6 space-y-3 text-neutral-900 text-2xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900">Coordonnées</h2>
+          <dl className="mt-4 sm:mt-6 space-y-2.5 sm:space-y-3 text-neutral-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             <div className="">
               <dt className="font-semibold">Adresse :</dt>
               <dd>Immeuble Gaëlle, 58 Faubourg Victor Hugo, 97110 Pointe-à-Pitre, Guadeloupe</dd>

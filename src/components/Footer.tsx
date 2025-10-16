@@ -39,53 +39,53 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="mt-10 border-t border-neutral-200">
-      <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-        <div className="flex max-md:flex-col md:gap-12 items-start justify-between">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start justify-between">
           {/* Left card */}
-          <div className="rounded-md bg-[#EEC96D] p-8 shadow-sm md:p-10">
-            <div className="flex items-center">
-              <div className="relative h-[162px] w-[116px]">
+          <div className="w-full md:flex-1 rounded-md bg-[#EEC96D] p-6 sm:p-8 md:p-10 shadow-sm">
+            <div className="flex items-center justify-center md:justify-start">
+              <div className="relative h-[120px] w-[86px] sm:h-[140px] sm:w-[100px] md:h-[162px] md:w-[116px]">
                 <Image src="/logo-dark.png" alt="Logo Pierre-Yves CHICOT" fill className="object-contain" />
               </div>
             </div>
 
-            <div className="mt-8 text-neutral-900">
-              <p className="text-xl font-semibold">Coordonnées :</p>
-              <dl className="mt-4 space-y-2 text-lg">
-                <div className="flex gap-2">
+            <div className="mt-6 sm:mt-8 text-neutral-900">
+              <p className="text-lg sm:text-xl font-semibold">Coordonnées :</p>
+              <dl className="mt-3 sm:mt-4 space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg">
+                <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                   <dt className="font-medium">Email :</dt>
-                  <dd className="flex-1 font-semibold">pyc971@yahoo.fr (pour les services d’avocat)</dd>
+                  <dd className="font-semibold break-words">pyc971@yahoo.fr (pour les services d'avocat)</dd>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                   <dt className="font-medium">Téléphone :</dt>
-                  <dd className="flex-1 font-semibold">+590 0690 80 22 64</dd>
+                  <dd className="font-semibold">+590 0690 80 22 64</dd>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
                   <dt className="font-medium">Adresse :</dt>
-                  <dd className="flex-1 font-semibold">Immeuble Gaëlle, 58 Faubourg Victor Hugo, 97110 Pointe-à-Pitre, Guadeloupe</dd>
+                  <dd className="font-semibold">Immeuble Gaëlle, 58 Faubourg Victor Hugo, 97110 Pointe-à-Pitre, Guadeloupe</dd>
                 </div>
               </dl>
             </div>
           </div>
 
           {/* Right social + heading */}
-          <div className="relative flex flex-col">
-            <div className="absolute h-1 w-full bg-[#EEC96D]" />
-            <div className=" mt-20">
-              <p className="text-xl">Réseaux Sociaux :</p>
-              <div className="mt-6 flex items-center gap-5">
-                <Link aria-label="Instagram" href="#" className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
-                  <InstagramIcon className="h-6 w-6" />
+          <div className="w-full md:w-auto relative flex flex-col">
+            <div className="absolute top-0 left-0 right-0 h-1 w-full bg-[#EEC96D]" />
+            <div className="mt-8 sm:mt-12 md:mt-20">
+              <p className="text-lg sm:text-xl text-center md:text-left">Réseaux Sociaux :</p>
+              <div className="mt-4 sm:mt-6 flex items-center justify-center md:justify-start gap-4 sm:gap-5">
+                <Link aria-label="Instagram" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                  <InstagramIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link aria-label="Facebook" href="#" className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
-                  <FacebookIcon className="h-6 w-6" />
+                <Link aria-label="Facebook" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                  <FacebookIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link aria-label="WhatsApp" href="#" className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-black text-white">
-                  <WhatsappIcon className="h-6 w-6" />
+                <Link aria-label="WhatsApp" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                  <WhatsappIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
               </div>
 
-              <h2 className="mt-10 text-3xl font-semibold">Contactez-nous !</h2>
+              <h2 className="mt-8 sm:mt-10 text-2xl sm:text-3xl font-semibold text-center md:text-left">Contactez-nous !</h2>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-neutral-200">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="flex items-center justify-center gap-2 py-6 text-sm text-neutral-700">
+          <p className="flex flex-wrap items-center justify-center gap-2 py-4 sm:py-6 text-xs sm:text-sm text-neutral-700">
             <span aria-hidden>©</span>
             <span>{year}</span>
             <span className="select-none">—</span>
