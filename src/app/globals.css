@@ -13,3 +13,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-playfair), "Playfair Display", Georgia, "Times New Roman", serif;
 }
+
+/* Hide scrollbar for mobile navigation */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

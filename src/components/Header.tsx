@@ -18,7 +18,7 @@ export default function Header() {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<header className="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+		<header className="md:sticky md:top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
 			<div className="mx-auto flex max-w-6xl items-center justify-end gap-4 px-4 py-4 sm:py-6 md:py-8">
 				<Link href="/" className="absolute md:top-6 left-4 md:left-0 xl:left-30 2xl:left-90 items-center gap-3 shrink-0">
 					<div className="relative h-14 w-12 md:h-32 md:w-30">

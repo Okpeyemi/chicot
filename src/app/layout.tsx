@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageLoader from "@/components/PageLoader";
 import StructuredData from "@/components/StructuredData";
+import MobileTopNav from "@/components/MobileTopNav";
 import { defaultMetadata } from "@/lib/metadata";
 
 const playfair = Playfair_Display({
@@ -28,6 +29,7 @@ export default function RootLayout({
       </head>
       <body className={`${playfair.variable} antialiased`}>
         <PageLoader />
+        <MobileTopNav />
         <Header />
         {children}
         <Footer />
