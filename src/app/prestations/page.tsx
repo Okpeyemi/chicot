@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata(
   "Prestations - Services Juridiques et Formations",
-  "Découvrez nos services d'avocat, de consultant en politiques publiques et de formateur. Expertise en droit pénal, civil, public et formations juridiques professionnelles.",
+  "Services d'avocat, consultant en politiques publiques et formateur. Expertise en droit pénal, civil, public et formations juridiques.",
   "/prestations",
   [
     "services avocat Guadeloupe",
