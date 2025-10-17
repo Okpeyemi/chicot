@@ -20,7 +20,7 @@ export default function MobileTopNav() {
 			initial={{ y: -50, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
 			transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-			className="md:hidden sticky top-0 z-50 w-full bg-[#E0B95C] border-b border-[#D4A84E] shadow-sm"
+			className="md:hidden sticky top-0 z-50 w-full bg-[#E0B95C] border-b border-[#D4A84E] shadow-sm relative"
 		>
 			<nav className="flex items-center gap-2 px-4 py-2.5 overflow-x-auto scrollbar-hide">
 				{navItems.map((item, index) => {
@@ -51,6 +51,8 @@ export default function MobileTopNav() {
 					);
 				})}
 			</nav>
+			{/* Gradient indicator for scrollable content */}
+			<div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-white to-transparent pointer-events-none" />
 		</motion.div>
 	);
 }
