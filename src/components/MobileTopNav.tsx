@@ -22,7 +22,7 @@ export default function MobileTopNav() {
 			transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
 			className="md:hidden sticky top-0 z-50 w-full bg-[#E0B95C] border-b border-[#D4A84E] shadow-sm"
 		>
-			<nav className="flex items-center justify-center gap-2 px-4 py-2.5 overflow-x-auto scrollbar-hide">
+			<nav className="flex items-center gap-2 px-4 py-2.5 overflow-x-auto scrollbar-hide">
 				{navItems.map((item, index) => {
 					const isActive = item.match(pathname ?? "/");
 					return (
