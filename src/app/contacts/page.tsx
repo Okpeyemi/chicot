@@ -4,8 +4,8 @@ import ContactSection from "@/components/contacts/ContactSection";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generatePageMetadata(
-  "Contact et Rendez-vous - Cabinet Avocat Guadeloupe",
-  "Prendre rendez-vous avec le Cabinet Pierre-Yves CHICOT à Pointe-à-Pitre. Contact rapide, consultation juridique, devis gratuit.",
+  "Contact - Prendre Rendez-vous",
+  "Contactez le Cabinet Pierre-Yves CHICOT à Pointe-à-Pitre. Consultation juridique, prise de rendez-vous et demande de devis gratuit. Réponse sous 24h.",
   "/contacts",
   [
     "contact avocat Guadeloupe",
