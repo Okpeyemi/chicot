@@ -9,7 +9,7 @@ const navItems = [
 	{ href: "/", label: "Accueil", match: (p: string) => p === "/" },
 	{ href: "/prestations", label: "Prestations", match: (p: string) => p.startsWith("/prestations") },
 	{ href: "/a-propos", label: "A propos", match: (p: string) => p.startsWith("/a-propos") },
-	{ href: "/blog", label: "Blog", match: (p: string) => p.startsWith("/blog") },
+	{ href: "/actualites", label: "Actualités", match: (p: string) => p.startsWith("/actualites") },
 	{ href: "/contacts", label: "Contacts", match: (p: string) => p.startsWith("/contacts") },
 ];
 
