@@ -1,76 +1,96 @@
-import Image from "next/image";
-
 type NewsItem = {
   title: string;
-  excerpt: string;
-  imageSrc?: string;
-  publishedAt: string;
-  source?: string;
+  description: string;
+  videoUrl: string; // Peut être une URL YouTube ou un chemin vers un fichier local (ex: "/video.mp4")
 };
 
 const ITEMS: NewsItem[] = [
   {
-    title: "Emission 1 - Thème",
-    excerpt:
-      "Consultant reconnu, diplômé de plusieurs universités prestigieuses (Jules Vernes Amiens, Paris–Ouest La Défense, Paris Panthéon–Sorbonne, Caen–Basse–Normandie). Avec une double formation en droit public et droit privé, …",
-    imageSrc: "/actualite.png",
-    publishedAt: "22 octobre 2025 à 15h32",
-    source: "France 24",
+    title: "Droit et Justice - Thématique 1",
+    description:
+      "Consultant reconnu, diplômé de plusieurs universités prestigieuses (Jules Vernes Amiens, Paris–Ouest La Défense, Paris Panthéon–Sorbonne, Caen–Basse–Normandie). Avec une double formation en droit public et droit privé, Maître CHICOT vous apporte son expertise juridique approfondie.",
+    videoUrl: "https://youtu.be/8TGU3A3lBBY?si=WjerVewRAQmHW3m0",
   },
   {
-    title: "PODCAST 2 - Thème",
-    excerpt:
-      "Consultant reconnu, diplômé de plusieurs universités prestigieuses (Jules Vernes Amiens, Paris–Ouest La Défense, Paris Panthéon–Sorbonne, Caen–Basse–Normandie). Avec une double formation en droit public et droit privé, …",
-    imageSrc: "/actualite.png",
-    publishedAt: "22 octobre 2025 à 15h32",
-    source: "France 24",
+    title: "Thématique 2: troubles anormaux du voisinage",
+    description:
+      "Que dit la loi ?",
+    videoUrl: "/video.mp4",
   },
 ];
 
-function PlayIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="10" fill="white" fillOpacity="0.9" />
-      <path d="M10 8l6 4-6 4V8z" fill="#000" />
-    </svg>
-  );
+// Fonction pour extraire l'ID YouTube de différents formats d'URL
+function getYouTubeVideoId(url: string): string | null {
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\?\/]+)/,
+    /^([a-zA-Z0-9_-]{11})$/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match) return match[1];
+  }
+  return null;
+}
+
+// Fonction pour déterminer si c'est une vidéo locale ou YouTube
+function isLocalVideo(url: string): boolean {
+  return url.startsWith('/') || url.startsWith('./') || !url.includes('youtube') && !url.includes('youtu.be');
 }
 
 export default function NewsSection({ items = ITEMS }: { items?: NewsItem[] }) {
   return (
     <section className="px-4 py-12 sm:py-16 md:py-20">
-      <div className="mx-auto max-w-6xl space-y-14">
-        {items.map((item, idx) => (
-          <div key={idx}>
-            <article className="grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1fr)_420px] md:gap-10">
-              <div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-neutral-900">{item.title}</h3>
-                <p className="mt-4 text-base sm:text-xl md:text-2xl lg:text-3xl leading-9 text-neutral-900">{item.excerpt}</p>
+      <div className="mx-auto max-w-5xl space-y-12">
+        {items.map((item, idx) => {
+          const isLocal = isLocalVideo(item.videoUrl);
+          const videoId = !isLocal ? getYouTubeVideoId(item.videoUrl) : null;
+
+          return (
+            <article key={idx} className="space-y-6">
+              {/* Vidéo (YouTube ou locale) */}
+              <div className="relative w-full overflow-hidden rounded-xl shadow-lg">
+                {isLocal ? (
+                  // Vidéo locale (MP4, WebM, etc.)
+                  <video
+                    className="w-full h-auto rounded-xl"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    <source src={item.videoUrl} type="video/mp4" />
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                  </video>
+                ) : videoId ? (
+                  // Vidéo YouTube
+                  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      title={item.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : null}
               </div>
 
-              <figure>
-                <div className="relative h-[220px] w-full overflow-hidden rounded-2xl shadow sm:h-[260px] md:h-[240px]">
-                  <Image
-                    src={item.imageSrc || "/actualite.png"}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 420px"
-                  />
-                  <div className="absolute inset-0 grid place-items-center">
-                    <PlayIcon className="h-16 w-16 drop-shadow" />
-                  </div>
-                </div>
-                <figcaption className="mt-3 text-center md:text-left text-sm text-neutral-700">
-                  Publiée le {item.publishedAt}
-                  {item.source ? ` - ${item.source}` : ""}
-                </figcaption>
-              </figure>
-            </article>
+              {/* Titre de la thématique */}
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900">
+                {item.title}
+              </h3>
 
-            {idx < items.length - 1 && <hr className="mt-6 border-neutral-300" />}
-          </div>
-        ))}
+              {/* Description */}
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-neutral-700">
+                {item.description}
+              </p>
+
+              {/* Séparateur entre les vidéos */}
+              {idx < items.length - 1 && <hr className="mt-8 border-neutral-300" />}
+            </article>
+          );
+        })}
       </div>
     </section>
   );
