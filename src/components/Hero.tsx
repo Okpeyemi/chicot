@@ -10,7 +10,7 @@ export default function Hero() {
 			{/* Background image */}
 			<div className="relative h-[70vh] min-h-[400px] w-full sm:h-[80vh] lg:h-screen">
 				<Image
-					src="/acceuil-hero.png"
+					src="/acceuil-hero.jpg"
 					alt="Façade d'un tribunal avec la statue de la justice"
 					fill
 					priority
@@ -23,7 +23,7 @@ export default function Hero() {
 						initial={{ opacity: 0, y: 30 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-						className="bg-white/65 backdrop-blur-sm shadow-md rounded-md px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-7xl w-full"
+						className="bg-white/65 backdrop-blur-[] shadow-md rounded-md px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-7xl w-full"
 					>
 						<h1 className="text-center text-neutral-900 text-lg leading-relaxed sm:text-2xl md:text-4xl lg:text-5xl">
 							<span className="font-semibold">Pierre-Yves CHICOT</span>
