@@ -39,7 +39,7 @@ export default function Hero() {
 					>
 						<Link
 							href="#contact"
-							className="block rounded-md bg-[#EEC96D] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+							className="block rounded-2xl bg-[#EEC96D] w-fit text-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
 						>
 							Demander un devis gratuit
 						</Link>

@@ -6,7 +6,7 @@ import FadeIn from "./animations/FadeIn";
 export default function Welcome() {
   return (
     <section aria-label="Présentation du cabinet" className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
-      <div className="mx-auto max-w-5xl text-center text-neutral-900">
+      <div className="mx-auto max-w-5xl text-center text-neutral-900 mt-10">
         <FadeIn delay={0.1}>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed sm:leading-relaxed md:leading-loose px-2">
             Bienvenue au Cabinet de <strong>Maître Pierre-Yves CHICOT</strong>, votre partenaire de
