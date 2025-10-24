@@ -6,13 +6,7 @@ type NewsItem = {
 
 const ITEMS: NewsItem[] = [
   {
-    title: "Droit et Justice - Thématique 1",
-    description:
-      "Consultant reconnu, diplômé de plusieurs universités prestigieuses (Jules Vernes Amiens, Paris–Ouest La Défense, Paris Panthéon–Sorbonne, Caen–Basse–Normandie). Avec une double formation en droit public et droit privé, Maître CHICOT vous apporte son expertise juridique approfondie.",
-    videoUrl: "https://youtu.be/8TGU3A3lBBY?si=WjerVewRAQmHW3m0",
-  },
-  {
-    title: "Thématique 2: troubles anormaux du voisinage",
+    title: "Thématique: troubles anormaux du voisinage",
     description:
       "Que dit la loi ?",
     videoUrl: "/video.mp4",
