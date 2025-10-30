@@ -21,7 +21,7 @@ export default function ConsultationNotice() {
         <div className="-mt-6 sm:-mt-8">
           <Link
             href="#prestations"
-            className="inline-flex items-center justify-center rounded-xl sm:rounded-2xl bg-[#EEC96D] px-4 py-2.5 sm:px-6 sm:py-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+            className="inline-flex items-center justify-center rounded-xl sm:rounded-2xl bg-[#EEC96D] px-4 py-2.5 sm:px-6 sm:py-3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-foreground shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
           >
             Découvrez nos Services
           </Link>

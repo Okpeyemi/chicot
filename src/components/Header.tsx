@@ -36,7 +36,7 @@ export default function Header() {
 								href={item.href}
 								className={
 									"text-base lg:text-lg font-semibold transition-colors whitespace-nowrap " +
-									(isActive ? "text-[#E0B95C]" : "text-neutral-900 hover:text-[#E0B95C]")
+									(isActive ? "text-[#E0B95C]" : "text-foreground hover:text-[#E0B95C]")
 								}
 							>
 								{item.label}
@@ -48,7 +48,7 @@ export default function Header() {
 				{/* Mobile button */}
 				<button
 					onClick={() => setOpen((v) => !v)}
-					className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-neutral-300 text-neutral-700 hover:bg-neutral-50 transition-colors"
+					className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-neutral-300 text-foreground/70 hover:bg-neutral-50 transition-colors"
 					aria-expanded={open}
 					aria-controls="mobile-nav"
 					aria-label="Ouvrir le menu"
@@ -75,7 +75,7 @@ export default function Header() {
 									onClick={() => setOpen(false)}
 									className={
 										"rounded-md px-3 py-2.5 text-base font-semibold transition-colors " +
-										(isActive ? "bg-[#EEC96D]/20 text-[#E0B95C]" : "text-neutral-900 hover:bg-neutral-100")
+										(isActive ? "bg-[#EEC96D]/20 text-[#E0B95C]" : "text-foreground hover:bg-neutral-100")
 									}
 								>
 									{item.label}

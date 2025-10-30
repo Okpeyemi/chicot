@@ -33,7 +33,7 @@ export default function ContactSection() {
   };
 
   const inputCls =
-    "w-full rounded-xl bg-neutral-100 px-4 py-3 text-neutral-900 placeholder-neutral-500 outline-none ring-1 ring-neutral-200 focus:ring-2 focus:ring-neutral-400";
+    "w-full rounded-xl bg-neutral-100 px-4 py-3 text-foreground placeholder-foreground/50 outline-none ring-1 ring-neutral-200 focus:ring-2 focus:ring-neutral-400";
 
   return (
     <section className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
@@ -97,11 +97,11 @@ export default function ContactSection() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
               <button
                 type="submit"
-                className="w-full sm:w-auto rounded-xl sm:rounded-2xl bg-[#EEC96D] px-5 py-2.5 sm:px-6 sm:py-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+                className="w-full sm:w-auto rounded-xl sm:rounded-2xl bg-[#EEC96D] px-5 py-2.5 sm:px-6 sm:py-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-foreground shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
               >
                 Envoyer
               </button>
-              <p className="text-xs sm:text-sm text-neutral-600 text-center sm:text-left">Nous vous répondrons sous 24h !</p>
+              <p className="text-xs sm:text-sm text-foreground/60 text-center sm:text-left">Nous vous répondrons sous 24h !</p>
             </div>
           </form>
         </div>
@@ -111,8 +111,8 @@ export default function ContactSection() {
 
         {/* Details */}
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900">Coordonnées</h2>
-          <dl className="mt-4 sm:mt-6 space-y-2.5 sm:space-y-3 text-neutral-900 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground">Coordonnées</h2>
+          <dl className="mt-4 sm:mt-6 space-y-2.5 sm:space-y-3 text-foreground text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             <div className="">
               <dt className="font-semibold">Adresse :</dt>
               <dd>Immeuble Gaëlle, 58 Faubourg Victor Hugo, 97110 Pointe-à-Pitre, Guadeloupe</dd>

@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Welcome() {
   return (
     <section aria-label="Présentation du cabinet" className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
-      <div className="mx-auto max-w-5xl text-center text-neutral-900">
+      <div className="mx-auto max-w-5xl text-center text-foreground">
         {/* Image et titres professionnels */}
         <ScaleIn delay={0.1}>
           <div className="flex max-md:flex-col justify-center items-center mb-8 gap-4">
@@ -64,7 +64,7 @@ export default function Welcome() {
           <div className="mt-8 sm:mt-10">
             <Link
               href="#contact"
-              className="inline-flex items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-b from-neutral-200 to-neutral-300 px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-base sm:text-lg font-semibold text-neutral-700 shadow hover:from-neutral-300 hover:to-neutral-400 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400"
+              className="inline-flex items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-b from-neutral-200 to-neutral-300 px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 text-base sm:text-lg font-semibold text-foreground/70 shadow hover:from-neutral-300 hover:to-neutral-400 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400"
             >
               Prendre rendez-vous
             </Link>

@@ -74,7 +74,7 @@ export default function Hero() {
 						transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
 						className="bg-white/65 backdrop-blur-[] shadow-md rounded-md px-4 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 max-w-7xl w-full"
 					>
-						<h1 className="text-center text-neutral-900 text-lg leading-relaxed sm:text-2xl md:text-4xl lg:text-5xl">
+						<h1 className="text-center text-foreground text-lg leading-relaxed sm:text-2xl md:text-4xl lg:text-5xl">
 							<span className="font-semibold">Pierre-Yves CHICOT</span>
 							<span className="font-normal"> : Expertise en Droit et Excellence au service de vos besoins</span>
 						</h1>
@@ -88,7 +88,7 @@ export default function Hero() {
 					>
 						<Link
 							href="#contact"
-							className="block rounded-2xl bg-[#EEC96D] w-fit text-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+							className="block rounded-2xl bg-[#EEC96D] w-fit text-center px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-foreground shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
 						>
 							Demander un devis gratuit
 						</Link>

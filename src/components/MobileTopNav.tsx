@@ -42,7 +42,7 @@ export default function MobileTopNav() {
 									"inline-flex items-center justify-center px-4 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all " +
 									(isActive
 										? "bg-white text-[#E0B95C] shadow-md"
-										: "bg-transparent text-white hover:bg-white/20")
+										: "bg-transparent text-foreground hover:bg-white/20")
 								}
 							>
 								{item.label}

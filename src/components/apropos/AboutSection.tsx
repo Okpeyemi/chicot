@@ -9,7 +9,7 @@ export default function AboutSection() {
     <section className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 md:gap-12">
         {/* Text content */}
-        <div className="text-neutral-900 text-base sm:text-lg leading-7 sm:leading-8">
+        <div className="text-foreground text-base sm:text-lg leading-7 sm:leading-8">
           <div className="flex flex-col md:flex-row justify-between gap-6 sm:gap-8">
             <FadeIn direction="left" delay={0.1} className="flex-1">
               <p className="text-justify text-base sm:text-xl md:text-2xl lg:text-3xl leading-relaxed sm:leading-relaxed md:leading-loose">

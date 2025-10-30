@@ -42,7 +42,7 @@ export default function PrestationsHero({
 
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <div className="bg-white/70 backdrop-blur-sm shadow-md rounded-md px-6 py-5 sm:px-8 sm:py-6 w-3xl">
-            <h1 className="text-center text-neutral-900 text-2xl sm:text-3xl md:text-4xl font-semibold">
+            <h1 className="text-center text-foreground text-2xl sm:text-3xl md:text-4xl font-semibold">
               {normalizedTitle}
             </h1>
           </div>

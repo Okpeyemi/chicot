@@ -4,7 +4,7 @@ export default function WhyChooseUsSection() {
   return (
     <section className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground">
           Pourquoi nous choisir ?
         </h2>
         <p className="mt-3 sm:mt-4 text-base sm:text-xl md:text-2xl lg:text-3xl leading-relaxed sm:leading-relaxed md:leading-loose text-neutral-800 px-2">

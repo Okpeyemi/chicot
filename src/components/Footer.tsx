@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="mt-6 sm:mt-8 text-neutral-900">
+            <div className="mt-6 sm:mt-8 text-foreground">
               <p className="text-lg sm:text-xl font-semibold">Coordonnées :</p>
               <dl className="mt-3 sm:mt-4 space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg">
                 <div className="flex flex-col sm:flex-row gap-1 sm:gap-2">
@@ -80,13 +80,13 @@ export default function Footer() {
             <div className="mt-8 sm:mt-12 md:mt-20">
               <p className="text-lg sm:text-xl text-center md:text-left">Réseaux Sociaux :</p>
               <div className="mt-4 sm:mt-6 flex items-center justify-center md:justify-start gap-4 sm:gap-5">
-                <Link aria-label="Instagram" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                <Link aria-label="Instagram" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-foreground hover:bg-neutral-800 transition-colors">
                   <InstagramIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link aria-label="Facebook" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                <Link aria-label="Facebook" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-foreground hover:bg-neutral-800 transition-colors">
                   <FacebookIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
-                <Link aria-label="WhatsApp" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-white hover:bg-neutral-800 transition-colors">
+                <Link aria-label="WhatsApp" href="#" className="group inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black text-foreground hover:bg-neutral-800 transition-colors">
                   <WhatsappIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </Link>
               </div>
@@ -101,7 +101,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-neutral-200">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="flex flex-wrap items-center justify-center gap-2 py-4 sm:py-6 text-xs sm:text-sm text-neutral-700">
+          <p className="flex flex-wrap items-center justify-center gap-2 py-4 sm:py-6 text-xs sm:text-sm text-foreground/70">
             <span aria-hidden>©</span>
             <span>{year}</span>
             <span className="select-none">—</span>

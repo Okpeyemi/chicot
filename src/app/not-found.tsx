@@ -24,10 +24,10 @@ export default function NotFound() {
         </div>
 
         {/* Message */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground mb-4">
           Page introuvable
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed mb-8 px-4">
+        <p className="text-base sm:text-lg md:text-xl text-foreground/70 leading-relaxed mb-8 px-4">
           Désolé, la page que vous recherchez n&apos;existe pas ou a été déplacée.
           Veuillez vérifier l&apos;URL ou retourner à la page d&apos;accueil.
         </p>
@@ -36,7 +36,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-xl bg-[#EEC96D] px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-neutral-900 shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
+            className="inline-flex items-center justify-center rounded-xl bg-[#EEC96D] px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-foreground shadow hover:bg-[#e1bb57] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EEC96D]"
           >
             <svg
               className="mr-2 h-5 w-5"
@@ -57,7 +57,7 @@ export default function NotFound() {
 
           <Link
             href="/contacts"
-            className="inline-flex items-center justify-center rounded-xl bg-neutral-200 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-neutral-700 shadow hover:bg-neutral-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400"
+            className="inline-flex items-center justify-center rounded-xl bg-neutral-200 px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-foreground/70 shadow hover:bg-neutral-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400"
           >
             Nous contacter
           </Link>
@@ -65,25 +65,25 @@ export default function NotFound() {
 
         {/* Liens utiles */}
         <div className="mt-12 pt-8 border-t border-neutral-200">
-          <p className="text-sm sm:text-base text-neutral-600 mb-4">
+          <p className="text-sm sm:text-base text-foreground/60 mb-4">
             Pages populaires&nbsp;:
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
             <Link
               href="/prestations"
-              className="text-neutral-700 hover:text-[#E0B95C] transition-colors underline"
+              className="text-foreground/70 hover:text-[#E0B95C] transition-colors underline"
             >
               Prestations
             </Link>
             <Link
               href="/a-propos"
-              className="text-neutral-700 hover:text-[#E0B95C] transition-colors underline"
+              className="text-foreground/70 hover:text-[#E0B95C] transition-colors underline"
             >
               À propos
             </Link>
             <Link
               href="/blog"
-              className="text-neutral-700 hover:text-[#E0B95C] transition-colors underline"
+              className="text-foreground/70 hover:text-[#E0B95C] transition-colors underline"
             >
               Blog
             </Link>

@@ -4,12 +4,12 @@ export default function ConsultantSection() {
       <div className="mx-auto max-w-6xl">
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden ring-neutral-200">
           {/* Header pill */}
-          <div className="bg-[#EEC96D] px-4 py-3 sm:px-6 sm:py-4 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-neutral-900">
+          <div className="bg-[#EEC96D] px-4 py-3 sm:px-6 sm:py-4 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
             Consultant en Politiques Publiques
           </div>
           {/* Body */}
           <div className="bg-gradient-to-b from-white to-neutral-100 p-4 sm:p-6 md:p-8 text-base sm:text-xl md:text-2xl lg:text-3xl">
-            <ul className="list-disc space-y-1.5 sm:space-y-2 pl-5 sm:pl-6 leading-6 sm:leading-7 md:leading-8 text-neutral-900">
+            <ul className="list-disc space-y-1.5 sm:space-y-2 pl-5 sm:pl-6 leading-6 sm:leading-7 md:leading-8 text-foreground">
               <li>Élaboration, mise en œuvre et évaluation de politiques publiques</li>
               <li>Analyse des problématiques publiques et des impacts des décisions politiques</li>
               <li>Communication avec les parties prenantes, les médias et le public</li>

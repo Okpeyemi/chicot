@@ -71,7 +71,7 @@ export default function NewsSection({ items = ITEMS }: { items?: NewsItem[] }) {
               </div>
 
               {/* Titre de la thématique */}
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground">
                 {item.title}
               </h3>
 

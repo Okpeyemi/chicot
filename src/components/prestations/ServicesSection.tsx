@@ -9,11 +9,11 @@ export default function ServicesSection() {
         {/* Avocat card */}
         <ScaleIn delay={0.1}>
           <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] ring-neutral-200 p-2 sm:p-3 md:p-4">
-          <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900">
+          <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Avocat
           </div>
 
-          <ul className="mt-4 sm:mt-6 list-disc space-y-1.5 sm:space-y-2 px-6 sm:px-8 md:px-10 leading-6 sm:leading-7 md:leading-8 text-neutral-900 text-base sm:text-xl md:text-2xl lg:text-3xl">
+          <ul className="mt-4 sm:mt-6 list-disc space-y-1.5 sm:space-y-2 px-6 sm:px-8 md:px-10 leading-6 sm:leading-7 md:leading-8 text-foreground text-base sm:text-xl md:text-2xl lg:text-3xl">
             <li>Conseils juridiques personnalisés</li>
             <li>
               Représentation en justice (droit pénal, civil, public, droit des étrangers)
@@ -31,11 +31,11 @@ export default function ServicesSection() {
         {/* Formateur card */}
         <ScaleIn delay={0.2}>
           <div className="rounded-2xl sm:rounded-3xl bg-[#F0EDED] shadow-sm ring-1 ring-neutral-200 p-2 sm:p-3 md:p-4">
-          <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 text-center">
+          <div className="flex rounded-xl sm:rounded-2xl justify-center bg-[#EEC96D] px-4 py-6 sm:px-5 sm:py-8 md:py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-center">
             Formateur et Séminariste
           </div>
 
-          <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3 leading-6 sm:leading-7 md:leading-8 text-neutral-900 text-base sm:text-xl md:text-2xl lg:text-3xl">
+          <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3 leading-6 sm:leading-7 md:leading-8 text-foreground text-base sm:text-xl md:text-2xl lg:text-3xl">
             <p className="px-3 sm:px-4">
               Nous proposons des formations juridiques et professionnelles sur les thématiques suivantes :
             </p>
