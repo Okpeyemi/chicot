@@ -7,30 +7,30 @@ import Image from "next/image";
 
 export default function Welcome() {
   return (
-    <section aria-label="Présentation du cabinet" className="px-4 py-8 sm:py-12 md:py-16 lg:py-20">
+    <section aria-label="Présentation du cabinet" className="px-4 py-8">
       <div className="mx-auto max-w-5xl text-center text-neutral-900">
         {/* Image et titres professionnels */}
         <ScaleIn delay={0.1}>
-          <div className="flex max-md:flex-col justify-center items-center mb-8 gap-4">
-            <div className="relative w-[200px] h-[250px] overflow-hidden shadow-md mb-4 rounded-lg">
+          <div className="flex max-md:flex-col justify-center items-center md:items-end mb-8 gap-4">
+            <div className="relative w-[200px] h-[250px] overflow-hidden shadow-md max-md:mb-4 rounded-lg">
               <Image
                 src="/maitre-pierre-yves-chicot2.png"
                 alt="Portrait de Maître Pierre-Yves CHICOT"
                 fill
-                className="object-cover"
+                className="object-cover rounded-3xl"
                 priority
               />
             </div>
             <div className="flex flex-col max-md:items-center items-start">
-            <p className="text-red-600 font-semibold text-sm sm:text-base md:text-lg">
-              Professeur des facultés de droit,
-            </p>
-            <p className="text-red-600 font-semibold text-sm sm:text-base md:text-lg">
-              Avocat à la Cour,
-            </p>
-            <p className="text-red-600 font-semibold text-sm sm:text-base md:text-lg">
-              Consultant en Politiques Publiques.
-            </p>
+              <p className="italic font-semibold text-sm sm:text-base md:text-lg">
+                Professeur des facultés de droit,
+              </p>
+              <p className="italic font-semibold text-sm sm:text-base md:text-lg">
+                Avocat à la Cour,
+              </p>
+              <p className="italic font-semibold text-sm sm:text-base md:text-lg">
+                Consultant en Politiques Publiques.
+              </p>
             </div>
           </div>
         </ScaleIn>
